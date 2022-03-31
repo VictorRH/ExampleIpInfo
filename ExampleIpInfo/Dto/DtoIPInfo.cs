@@ -1,8 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ExampleIpInfo.Dto
 {
@@ -11,31 +7,31 @@ namespace ExampleIpInfo.Dto
         public partial class IPInfoRoot
         {
             [JsonProperty("ip")]
-            public string Ip { get; set; }
+            public string? Ip { get; set; }
 
             [JsonProperty("hostname")]
-            public string Hostname { get; set; }
+            public string? Hostname { get; set; }
 
             [JsonProperty("city")]
-            public string City { get; set; }
+            public string? City { get; set; }
 
             [JsonProperty("region")]
-            public string Region { get; set; }
+            public string? Region { get; set; }
 
             [JsonProperty("country")]
-            public string Country { get; set; }
+            public string? Country { get; set; }
 
             [JsonProperty("loc")]
-            public string Loc { get; set; }
+            public string? Loc { get; set; }
 
             [JsonProperty("org")]
-            public string Org { get; set; }
+            public string? Org { get; set; }
 
             [JsonProperty("postal")]
-            public string Postal { get; set; }
+            public string? Postal { get; set; }
 
             [JsonProperty("timezone")]
-            public string Timezone { get; set; }
+            public string? Timezone { get; set; }
         }
     }
 }
